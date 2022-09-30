@@ -1,0 +1,64 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+    "version": "1.0.0",
+    "manifestVersion": "1.14",
+    "id": "69161957-6d1b-4c03-b2e6-f99770c34840",
+    "packageName": "com.package.name",
+    "name": {
+        "short": "Test",
+        "full": ""
+    },
+    "developer": {
+        "name": "Example Company",
+        "mpnId": "",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy/",
+        "termsOfUseUrl": "https://www.example.com/terms"
+    },
+    "description": {
+        "short": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.",
+        "full": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "6bbee4c4-3323-4c39-b58a-ed6409820da5",
+            "name": "Settings",
+            "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId={6bbee4c4-3323-4c39-b58a-ed6409820da5}%26forceLocale={locale}",
+            "websiteUrl": "https://www.example.com",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "01f6416f-df4a-4c74-babd-2e60c77df1ac",
+            "name": "Test",
+            "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId={01f6416f-df4a-4c74-babd-2e60c77df1ac}%26forceLocale={locale}",
+            "websiteUrl": "https://www.example.com",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "about",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "validDomains": [
+        "{teamsitedomain}",
+        "*.login.microsoftonline.com",
+        "*.sharepoint.com",
+        "spoprod-a.akamaihd.net",
+        "resourceseng.blob.core.windows.net"
+    ],
+    "webApplicationInfo": {
+        "resource": "https://{teamSiteDomain}",
+        "id": "00000003-0000-0ff1-ce00-000000000000"
+    }
+}
